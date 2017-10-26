@@ -9,7 +9,7 @@ package practico43.Telefonia;
  *
  * @author ULP
  */
-public class Fijo {
+public class Fijo extends Telefono {
     
     private String linea;
     
@@ -23,6 +23,14 @@ public class Fijo {
     this.linea=linea;
     }
     
-    
-    
+    public Fijo(long numero, String modelo, String marca, String linea)
+    {
+    super(numero,modelo,marca);
+    this.linea=linea;
+    }
+    public  boolean Llamar(long nroDestino)
+    {
+        return false;
+    }
+
 }
